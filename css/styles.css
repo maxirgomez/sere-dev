@@ -1,0 +1,2869 @@
+* {
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'GT-Eesti-Pro-Display-Bold';
+  src: url('../fonts/GT-Eesti-Pro-Display-Bold.OTF');
+}
+
+@font-face {
+  font-family: 'GT-Eesti-Pro-Display-Regular';
+  src: url('../fonts/GT-Eesti-Pro-Display-Regular.OTF');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'GT-Eesti-Pro-Display-Bold';
+  margin: 0;
+}
+
+p,
+li {
+  font-family: 'GT-Eesti-Pro-Display-Regular';
+  margin: 0;
+}
+
+article:nth-child(1) {
+  background-image: url('../img/asset_Back03.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+article:nth-child(2) {
+  background-image: url('../img/asset_Back02.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article:nth-child(3) {
+  background-image: url('../img/asset_Back01.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+article:nth-child(4) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article:nth-child(5) {
+  position: relative;
+  height: 100vh;
+  background-image: url('../img/asset_Back04.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 0 2rem;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: white;
+  background-color: #f94f01;
+  padding: .5rem .7rem;
+  border-radius: 50%;
+  font-size: 15px !important;
+  font-weight: bold;
+}
+
+.f-light {
+  font-family: 'GT-Eesti-Pro-Display-Regular';
+}
+
+.txt-orange {
+  color: #f94f01;
+}
+
+.btn-serenisima {
+  background-color: #03914c;
+  color: #fff;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 40px;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-serenisima:hover {
+  background-color: #fff;
+  border: 1px solid #03914c;
+  color: #03914c;
+}
+
+.arrDropdown {
+  height: 10px;
+  width: auto;
+  margin: auto 0 auto .5rem;
+}
+
+.swiper-button-next:focus, .swiper-container-rtl .swiper-button-prev:focus{
+  background-color: transparent!important;
+  color: transparent!important;
+}
+
+@media (min-width: 1500px) {
+  article:nth-child(1) {
+    height: 80vh !important;
+  }
+
+  article:nth-child(2) {
+    background-position: 0% 50%;
+  }
+
+  .img-minion-uno {
+    position: absolute !important;
+    top: 10rem !important;
+    left: 0 !important;
+  }
+
+  article:nth-child(5) {
+    height: 60vh;
+  }
+
+  .juego {
+    display: flex;
+    justify-content: center;
+  }
+
+  .juego iframe {
+    width: 80% !important;
+    height: 450px !important;
+  }
+
+  .img-minion-uno {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .img-minion-dos {
+    height: 250px;
+    position: absolute;
+    top: 16rem;
+    right: 0;
+  }
+
+  .banner-juego {
+    width: auto !important;
+    height: 45vh;
+  }
+
+  .familia-potes-social {
+    height: 240px
+  }
+
+  article:nth-child(4) {
+    height: 100vh;
+  }
+
+  .potes-xs{
+    height: 210px;
+    margin-bottom: 2rem;
+  }
+
+  .h-60{
+    height: 50vh;
+    margin-bottom: 3rem;
+  }
+
+  .mt5{
+    margin: auto;
+    padding-top: 3rem;
+  }
+
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1280px) {
+  article:nth-child(1) {
+    height: 100vh;
+  }
+
+  article:nth-child(2) {
+    background-position: 0% 50%;
+  }
+
+  article:nth-child(4) {
+    height: 100vh;
+  }
+
+  /**
+    * Style of Game Start 
+  */
+
+  #Juga .bg-ttl-juego {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 40px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #Juga .bg-ttl-juego .f-bold {
+    font-family: 'GT-Eesti-Pro-Display-Bold';
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  #Juga .bg-ttl-juego .f-light {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 15px;
+  }
+
+  .img-logo-juego {
+    height: 160px;
+    width: auto;
+    padding: 1rem 0;
+    position: absolute;
+    left: 20px;
+  }
+
+  .juego {
+    display: flex;
+    justify-content: center;
+  }
+
+  .juego iframe {
+    width: 45vw;
+    height: 350px;
+  }
+
+  .img-minion-uno {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+  }
+
+  .img-minion-dos {
+    height: 250px;
+    position: absolute;
+    top: 16rem;
+    right: 0;
+  }
+
+  .footer-juego h4 {
+    color: #FDC300;
+  }
+
+  .footer-juego h6 {
+    color: #000;
+  }
+
+  .ttl-juego {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  .footer-juego {
+    background-color: #fff;
+    width: 30%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: .5rem 0;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .banner-juego {
+    width: auto !important;
+    height: 50vh;
+  }
+
+  /**
+    * Style of Game End
+  */
+
+  /**
+    * Style of Product Start
+  */
+  #Productos header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 30%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Productos footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #Productos footer button {
+    background-color: #f94f01;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 5px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  #Productos footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #Productos .contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .p-ttl {
+    position: relative;
+    text-align: right;
+    top: 2rem;
+    right: 4rem;
+  }
+
+  .p-ttl-2 {
+    position: relative;
+    text-align: right;
+    right: 4rem;
+  }
+
+  .slider {
+    width: 650px;
+    margin: 6rem auto;
+  }
+
+  .potes-xs{
+    height: 210px;
+    margin-bottom: 2rem;
+  }
+
+  .h-60{
+    height: 50vh;
+    margin-bottom: 3rem;
+  }
+
+  /**
+    * Style of Product End
+  */
+
+  /**
+    * Style of Nutritional Information Start 
+  */
+  #Informacion-nutricional header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Informacion-nutricional .f-10 {
+    font-size: 10px;
+  }
+
+  #Informacion-nutricional footer {
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .tabla {
+    background-image: url('../img/asset_Soporte_Info_nutri.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+  }
+
+  .tabla table {
+    width: 420px;
+    margin: auto;
+  }
+
+  .tabla table h1 {
+    font-size: 20px;
+  }
+
+  .tabla table h2 {
+    font-size: 15px;
+  }
+
+  table tbody tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  #infonutri p {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 10px;
+  }
+
+  .tabla tr th {
+    font-family: 'GT-Eesti-Pro-Display-Regular';
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 1rem;
+  }
+
+  .tabla tr th:nth-child(1) {
+    font-family: 'GT-Eesti-Pro-Display-Bold';
+    font-size: 14px;
+  }
+
+  .tabla tr td {
+    font-family: 'GT-Eesti-Pro-Display-Regular';
+    font-size: 14px;
+  }
+
+  /**
+    * Style of Nutritional Information End
+  */
+
+  /**
+    * Style of Buy Start
+  */
+  #Comprar header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 40%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Comprar .contenedor-productos {
+    width: 85vw;
+  }
+
+  #Comprar .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  #Comprar .icon-market {
+    height: 120px;
+    width: auto;
+  }
+
+  .icon-market-l {
+    width: 100%;
+    height: 80px;
+  }
+
+  .icon-market-l-w {
+    height: 55px;
+    width: auto;
+  }
+
+  .icon-market-l-wl {
+    height: 70px;
+    width: auto;
+  }
+
+  .h-60-mobile {
+    height: 80px;
+  }
+
+  #Comprar .container {
+    width: 1000px;
+    margin: auto;
+  }
+
+  #Comprar .contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Comprar .contenedor-productos .img-minion-comprar-uno {
+    position: relative;
+    right: 150px;
+    height: 300px;
+  }
+
+  #Comprar .contenedor-productos .img-minion-comprar-dos {
+    position: relative;
+    left: 150px;
+    height: 300px;
+  }
+
+  #Comprar .icon-sere {
+    height: auto;
+    width: 90%;
+    margin-left: 50px;
+  }
+
+  .potes-s {
+    height: 270px;
+  }
+
+  .mt5{
+    margin: auto;
+    padding-top: 3rem;
+  }
+
+  /**
+    * Style of Buy End
+  */
+
+  /**
+    * Style of Socials Start
+  */
+  #Sociales header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Sociales footer {
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .img-footer-social {
+    width: auto;
+    height: 180px;
+  }
+
+  .p-social {
+    position: relative;
+    bottom: 140px;
+    justify-content: center;
+  }
+
+  .p-social img {
+    height: 35px;
+  }
+
+  .familia-potes-social {
+    height: 240px
+  }
+
+  /**
+    * Style of Socials End
+  */
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  article:nth-child(4) {
+    height: auto;
+  }
+
+  .menu {
+    line-height: 2em;
+  }
+
+  .menu .logo {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .menu h6 {
+    font-size: 14px;
+  }
+
+  /**
+    * Style of Game Start 
+  */
+  .d-none-mobileee {
+    display: none;
+  }
+
+  #Juga {
+    padding-top: 3rem;
+  }
+
+  #Juga .img-minion-uno {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    height: 50%;
+  }
+
+  #Juga header .bg-ttl-juego {
+    position: absolute;
+    width: 60%;
+    left: 10rem;
+    bottom: 5rem;
+    text-align: center;
+  }
+
+  #Juga .bg-ttl-juego {
+    background-color: white;
+    padding: .5rem;
+    border-radius: 40px;
+  }
+
+  #Juga .bg-ttl-juego .f-bold {
+    font-family: 'GT-Eesti-Pro-Display-Bold';
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  #Juga .bg-ttl-juego .f-light {
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 25px;
+  }
+
+  .banner-juego {
+    width: 80%;
+  }
+
+
+  .img-minion-juego {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: 1;
+    height: 250px;
+  }
+
+  .img-logo-juego {
+    height: 150px;
+    width: auto;
+  }
+
+  .footer-juego h4 {
+    color: #FDC300;
+    font-size: 20px;
+  }
+
+  .footer-juego h5 {
+    color: #000;
+    font-size: 15px;
+  }
+
+  .iframe {
+    margin-top: 2rem;
+    height: 40vh;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .iframe .juego {
+    margin: 0 auto 0 10rem;
+  }
+
+  .juego .img-pote-juego {
+    height: 120px;
+    position: absolute;
+    top: 18rem;
+    right: 15rem;
+  }
+
+  .ttl-juego {
+    font-size: 30px;
+    letter-spacing: 5px;
+    line-height: 25px;
+  }
+
+  #Juga hgroup h3 {
+    font-size: 22px;
+  }
+
+  #Juga hgroup {
+    padding-bottom: 0;
+    width: 70%;
+    margin: 2rem auto 5rem auto;
+  }
+
+  .footer-juego {
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .footer-juego h5 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /**
+    * Style of Game End
+  */
+
+  /**
+    * Style of Product Start
+  */
+  article:nth-child(2) {
+    background-size: 60%;
+    background-position: 0% 50%;
+  }
+
+  #Productos header h1 {
+    font-size: 25px;
+  }
+
+  #Productos header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Productos footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  #Productos footer button {
+    background-color: #f94f01;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 1.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  #Productos footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #Productos .contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slider {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  .swiper-slide {
+    margin: 7rem 0;
+  }
+
+  .swiper-slide img {
+    height: 250px;
+  }
+
+  #Productos .contenedor-productos .productos-minion-1 {
+    display: none;
+  }
+
+  #Productos .contenedor-productos .productos-minion-2 {
+    display: none;
+  }
+
+
+  #Productos .img-potes-prod {
+    height: 340px;
+  }
+
+  .p-ttl {
+    position: relative;
+    text-align: right;
+    top: 2rem;
+  }
+
+  /**
+    * Style of Product End
+  */
+
+  /**
+    * Style of Nutritional Information Start 
+  */
+  #Informacion-nutricional header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 98%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Informacion-nutricional header h1 {
+    font-size: 20px;
+  }
+
+  #Informacion-nutricional .f-10 {
+    font-size: 10px;
+  }
+
+  #Informacion-nutricional footer {
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .tabla {
+    background-image: url('../img/asset_Soporte_Info_nutri.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px 450px;
+    height: 360px;
+    padding: 1rem !important;
+    border-radius: 40px;
+    width: 40vw;
+    margin: 0 auto 4rem auto;
+  }
+
+  .tabla table {
+    width: 30vw;
+    margin: auto;
+  }
+
+  table tbody tr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tabla table th h1 {
+    font-size: 15px;
+  }
+
+  .tabla table th h2 {
+    font-size: 10px;
+  }
+
+  #infonutri p {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 10px;
+  }
+
+  .tabla tr th {
+    font-family: 'GT-Eesti-Pro-Display-Regular';
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 1rem;
+    padding-top: 0 !important;
+  }
+
+  .tabla tr th:nth-child(1) {
+    font-family: 'GT-Eesti-Pro-Display-Bold';
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .tabla tr td {
+    font-family: 'GT-Eesti-Pro-Display-Regular';
+    font-size: 12px;
+  }
+
+  /**
+    * Style of Nutritional Information End
+  */
+
+  /**
+    * Style of Buy Start
+  */
+  article:nth-child(4) {
+    height: auto;
+  }
+
+  #Comprar {
+    padding: 2rem 0;
+  }
+
+  #Comprar header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Comprar header h1 {
+    font-size: 25px;
+  }
+
+  #Comprar .contenedor-productos {
+    text-align: center;
+  }
+
+  #Comprar .contenedor-productos .mt-mobile {
+    margin-top: 1rem;
+  }
+
+  #Comprar .contenedor-productos .pt-mobile {
+    padding-top: 0 !important;
+  }
+
+  #Comprar .p-mobile-icon {
+    padding: 0 !important;
+  }
+
+  #Comprar .contenedor-productos .hide-mobile {
+    display: none;
+  }
+
+  #Comprar .icon-market {
+    height: 130px;
+    width: auto;
+    margin: 1rem;
+  }
+
+  #Comprar .h-60-mobile {
+    height: 70px;
+  }
+
+  #Comprar .contenedor-productos .productos-minion-1 {
+    display: none;
+  }
+
+  #Comprar .contenedor-productos .productos-minion-2 {
+    display: none;
+  }
+
+  #Comprar .icon-sere {
+    height: 80px;
+    margin: 0 auto;
+  }
+  
+  #Comprar .text-left {
+    text-align: center !important;
+  }
+
+  .icon-market-l{
+    height: 100px;
+  }
+
+  .icon-market-l-wl{
+    margin-top: 1rem;
+    height: 100px;
+  }
+
+  .icon-market-l-w{
+    height: 80px;
+  }
+
+  .mt5{
+    margin: auto;
+    padding-top: 0;
+  }
+
+  li {
+    margin: 0;
+    font-size: 14px;
+  }
+  /**
+    * Style of Buy End
+  */
+
+  /**
+    * Style of Socials Start
+  */
+  article:nth-child(5) {
+    height: 40vh;
+  }
+
+  #Sociales header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Sociales header h1 {
+    font-size: 20px;
+  }
+
+  #Sociales footer {
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #Sociales .img-familia-potes {
+    height: 120px;
+  }
+
+  .img-footer-social {
+    width: auto;
+    height: 120px;
+  }
+
+  .p-social {
+    position: relative;
+    bottom: 90px;
+    justify-content: center;
+  }
+
+  .p-social img {
+    height: 30px;
+  }
+
+  .familia-potes-social {
+    height: 120px;
+  }
+
+  /**
+    * Style of Socials End
+  */
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  html {
+    overflow-x: hidden !important;
+  }
+
+  article:nth-child(1) {
+    height: auto;
+  }
+
+  article:nth-child(4) {
+    height: auto;
+  }
+
+  .menu {
+    line-height: 2em;
+  }
+
+  .menu .logo {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .menu h6 {
+    font-size: 14px;
+  }
+
+  /**
+    * Style of Game Start 
+  */
+  .d-none-mobileee {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 8rem;
+    height: 150px;
+  }
+
+  #Juga {
+    padding-top: 3rem;
+  }
+
+  #Juga .img-minion-uno {
+    position: absolute;
+    top: 10rem;
+    height: 250px;
+  }
+
+  #Juga header .bg-ttl-juego {
+    position: relative;
+    width: 40%;
+    left: -60px;
+    bottom: 11rem;
+  }
+
+  #Juga .bg-ttl-juego {
+    background-color: white;
+    padding: .5rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  #Juga .bg-ttl-juego .f-bold {
+    font-family: 'GT-Eesti-Pro-Display-Bold';
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  #Juga .bg-ttl-juego .f-light {
+    font-size: 8px;
+    font-weight: 100;
+    line-height: 10px;
+  }
+
+  .banner-juego {
+    width: 40vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-minion-juego {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: 1;
+    height: 250px;
+  }
+
+  .img-logo-juego {
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .footer-juego h4 {
+    color: #FDC300;
+    font-size: 20px;
+  }
+
+  .footer-juego h5 {
+    color: #000;
+    font-size: 15px;
+  }
+
+  .iframe {
+    position: relative;
+    margin-top: 2rem;
+    bottom: 10rem;
+  }
+
+  .iframe .juego {
+    margin: 0 auto !important;
+  }
+
+  #Juga hgroup h3 {
+    font-size: 15px;
+  }
+
+  #Juga hgroup {
+    padding-bottom: 0;
+    width: 70%;
+    margin-left: auto;
+  }
+
+  .footer-juego {
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .footer-juego h5 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  iframe{
+    height: 150px;
+    width: 270px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  /**
+    * Style of Game End
+  */
+
+  /**
+    * Style of Product Start
+  */
+  article:nth-child(2) {
+    background-size: 50%;
+    background-position: 0% 50%;
+  }
+
+  #Productos header h1 {
+    font-size: 25px;
+  }
+
+  #Productos header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Productos footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  #Productos footer button {
+    background-color: #f94f01;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 1.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  #Productos footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #Productos .contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slider {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  .swiper-slide img {
+    height: 200px;
+    width: auto;
+  }
+
+  #Productos .contenedor-productos .productos-minion-1 {
+    display: none;
+  }
+
+  #Productos .contenedor-productos .productos-minion-2 {
+    display: none;
+  }
+
+
+  #Productos .img-potes-prod {
+    height: 340px;
+  }
+
+  /**
+    * Style of Product End
+  */
+
+  /**
+    * Style of Nutritional Information Start 
+  */
+  #Informacion-nutricional header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 98%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Informacion-nutricional header h1 {
+    font-size: 20px;
+  }
+
+  #Informacion-nutricional .f-10 {
+    font-size: 10px;
+  }
+
+  #Informacion-nutricional footer {
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .tabla {
+    background-image: url('../img/asset_Soporte_Info_nutri.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px 450px;
+    height: 360px;
+    padding: 1rem !important;
+    border-radius: 40px;
+  }
+
+  .tabla table {
+    width: 30vw;
+    margin: auto;
+  }
+
+  table tbody tr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tabla table th h1 {
+    font-size: 15px;
+  }
+
+  .tabla table th h2 {
+    font-size: 10px;
+  }
+
+  #infonutri p {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 10px;
+  }
+
+  .tabla tr th {
+    font-family: 'GT-Eesti-Pro-Display-Regular';
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 1rem;
+  }
+
+  .tabla tr th:nth-child(1) {
+    font-family: 'GT-Eesti-Pro-Display-Bold';
+    font-size: 14px;
+    padding-right: 10%;
+    text-align: center;
+  }
+
+  .tabla tr td {
+    font-family: 'GT-Eesti-Pro-Display-Regular';
+    font-size: 12px;
+  }
+
+  /**
+    * Style of Nutritional Information End
+  */
+
+  /**
+    * Style of Buy Start
+  */
+  article:nth-child(4) {
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  #Comprar header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Comprar header h1 {
+    font-size: 25px;
+  }
+
+  #Comprar .contenedor-productos {
+    text-align: center;
+  }
+
+  #Comprar .contenedor-productos .mt-mobile {
+    margin-top: 1rem;
+  }
+
+  #Comprar .contenedor-productos .pt-mobile {
+    padding-top: 0 !important;
+  }
+
+  #Comprar .p-mobile-icon {
+    padding: 0 !important;
+  }
+
+  #Comprar .contenedor-productos .hide-mobile {
+    display: none;
+  }
+
+  #Comprar .icon-market {
+    height: 90px;
+    width: auto;
+    padding: 1rem !important;
+  }
+
+  #Comprar .h-60-mobile {
+    height: 70px;
+  }
+
+  #Comprar .contenedor-productos .productos-minion-1 {
+    display: none;
+  }
+
+  #Comprar .contenedor-productos .productos-minion-2 {
+    display: none;
+  }
+
+  #Comprar .icon-sere {
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  #Comprar .text-left {
+    text-align: center !important;
+  }
+
+  #Comprar {
+    margin: 0 !important;
+  }
+
+  .icon-market-l {
+    height: 70px;
+    width: auto;
+  }
+
+  .icon-market-l-wl {
+    height: 70px;
+    width: auto;
+  }
+
+  .icon-market-l-w {
+    height: 70px;
+    width: auto;
+  }
+
+  .mt5{
+    margin: auto;
+    padding-top: 3rem;
+  }
+
+  /**
+    * Style of Buy End
+  */
+
+  /**
+    * Style of Socials Start
+  */
+  article:nth-child(5) {
+    height: 100vh;
+  }
+
+  #Sociales header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Sociales header h1 {
+    font-size: 20px;
+  }
+
+  #Sociales footer {
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #Sociales .img-familia-potes {
+    height: 120px;
+  }
+
+  .img-footer-social {
+    width: auto;
+    height: 120px;
+  }
+
+  .p-social {
+    position: relative;
+    bottom: 90px;
+    justify-content: center;
+  }
+
+  .p-social img {
+    height: 30px;
+  }
+
+  .familia-potes-social {
+    position: relative;
+    top: 2rem;
+    height: 160px;
+  }
+
+  /**
+    * Style of Socials End
+  */
+
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 350px) and (max-width: 767px) {
+  .menu {
+    line-height: 2em;
+  }
+
+  article:nth-child(4) {
+    height: auto;
+  }
+
+  .menu .logo {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .menu h6 {
+    font-size: 14px;
+  }
+
+  /**
+    * Style of Game Start 
+  */
+  .d-none-mobileee {
+    display: none;
+  }
+
+  article:nth-child(1) {
+    height: 100vh;
+  }
+
+  #Juga {
+    padding-top: 3rem;
+  }
+
+  #Juga .img-minion-uno {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    height: 220px;
+  }
+
+  #Juga header .bg-ttl-juego {
+    position: absolute;
+    width: 30%;
+    left: 0;
+    bottom: 5.5rem;
+    text-align: center;
+  }
+
+  #Juga .bg-ttl-juego {
+    background-color: white;
+    padding: .5rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  #Juga .bg-ttl-juego .f-bold {
+    font-family: 'GT-Eesti-Pro-Display-Bold';
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  #Juga .bg-ttl-juego .f-light {
+    font-size: 8px;
+    font-weight: 100;
+    line-height: 10px;
+  }
+
+  .banner-juego {
+    width: 92vw;
+  }
+
+  .img-minion-juego {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: 1;
+    height: 250px;
+  }
+
+  .img-logo-juego {
+    height: 120px;
+    width: auto;
+    margin-left: 9rem;
+  }
+
+  .footer-juego h4 {
+    color: #FDC300;
+    font-size: 20px;
+  }
+
+  .footer-juego h5 {
+    color: #000;
+    font-size: 15px;
+  }
+
+  .iframe {
+    height: auto;
+  }
+
+  .iframe .juego {
+    margin-top: 7vh;
+  }
+
+  /*
+  iframe {
+    width: 100%;
+  }
+  */
+  iframe{    
+    height: 180px;
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .juego .img-pote-juego {
+    height: 120px;
+    position: absolute;
+    top: 18rem;
+    right: 15rem;
+  }
+
+  .ttl-juego {
+    font-size: 30px;
+    letter-spacing: 5px;
+    line-height: 25px;
+  }
+
+  #Juga hgroup h3 {
+    font-size: 6vw;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+  .footer-juego {
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .footer-juego h5 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /**
+    * Style of Game End
+  */
+
+  /**
+    * Style of Product Start
+  */
+  article:nth-child(2) {
+    background-size: 700px;
+    background-position: 110% 50%;
+  }
+
+  #Productos header h1 {
+    font-size: 25px;
+  }
+
+  #Productos header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Productos footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  #Productos footer button {
+    background-color: #f94f01;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    margin: 0 auto;
+  }
+
+  #Productos footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #Productos .contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slider {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .swiper-slide {
+    width: 90vw;
+    margin: 5rem 0;
+  }
+
+  .swiper-slide img {
+    height: 250px;
+    width: auto;
+  }
+
+  #Productos .contenedor-productos .productos-minion-1 {
+    display: none;
+  }
+
+  #Productos .contenedor-productos .productos-minion-2 {
+    display: none;
+  }
+
+
+  #Productos .img-potes-prod {
+    height: 340px;
+  }
+
+  .p-ttl {
+    position: relative;
+    text-align: center;
+  }
+
+  .icon-market-l {
+    height: 65px;
+    width: auto;
+  }
+
+  .icon-market-l-w {
+    height: 55px;
+    width: auto;
+  }
+
+  .icon-market-l-wl {
+    height: 70px;
+    width: auto;
+  }
+
+  .potes-s{
+    margin-top: 3rem;
+  }
+
+  .potes-xs {
+    margin-top: 4rem;
+    padding: 1.5rem;
+  }
+  
+  .h-60{
+    margin-top: 1rem;
+    height: 300px!important;
+  }
+
+  /**
+    * Style of Product End
+  */
+
+  /**
+    * Style of Nutritional Information Start 
+  */
+  #Informacion-nutricional header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 98%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Informacion-nutricional header h1 {
+    font-size: 20px;
+  }
+
+  #Informacion-nutricional .f-10 {
+    font-size: 10px;
+  }
+
+  #Informacion-nutricional footer {
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .tabla {
+    background-image: url('../img/asset_Soporte_Info_nutri.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 1rem !important;
+    border-radius: 40px;
+  }
+
+  .tabla table {
+    width: 80vw;
+    margin: auto;
+  }
+
+  table tbody tr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tabla table th h1 {
+    font-size: 15px;
+  }
+
+  .tabla table th h2 {
+    font-size: 10px;
+  }
+
+  #infonutri p {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 10px;
+  }
+
+  .tabla tr th {
+    font-family: 'GT-Eesti-Pro-Display-Regular';
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 1rem;
+  }
+
+  .tabla tr th:nth-child(1) {
+    font-family: 'GT-Eesti-Pro-Display-Bold';
+    font-size: 14px;
+    text-align: center;
+    padding-top: .5rem !important;
+  }
+
+  .tabla tr td {
+    font-family: 'GT-Eesti-Pro-Display-Regular';
+    font-size: 12px;
+  }
+
+  /**
+    * Style of Nutritional Information End
+  */
+
+  /**
+    * Style of Buy Start
+  */
+
+  #Comprar {
+    padding: 2rem 0;
+  }
+
+  #Comprar header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Comprar header h1 {
+    font-size: 25px;
+  }
+
+  #Comprar .contenedor-productos {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  #Comprar .contenedor-productos .mt-mobile {
+    margin-top: 1rem;
+  }
+
+  #Comprar .contenedor-productos .pt-mobile {
+    padding-top: 0 !important;
+  }
+
+  #Comprar .p-mobile-icon {
+    padding: 0 !important;
+  }
+
+  #Comprar .contenedor-productos .hide-mobile {
+    display: none;
+  }
+
+  #Comprar .icon-market {
+    height: 90px;
+    width: auto;
+    padding: .5rem;
+  }
+
+  #Comprar .h-60-mobile {
+    height: 70px;
+  }
+
+  #Comprar .contenedor-productos .productos-minion-1 {
+    display: none;
+  }
+
+  #Comprar .contenedor-productos .productos-minion-2 {
+    display: none;
+  }
+
+  #Comprar .icon-sere {
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  #Comprar .text-left {
+    text-align: center !important;
+  }
+
+  .icon-market-l-wl,
+  .icon-market-l-w {
+    margin-top: 1rem;
+  }
+
+
+  /**
+    * Style of Buy End
+  */
+
+  /**
+    * Style of Socials Start
+  */
+  article:nth-child(5) {
+    height: 100vh;
+  }
+
+  #Sociales header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Sociales header h1 {
+    font-size: 20px;
+  }
+
+  #Sociales footer {
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #Sociales .img-familia-potes {
+    height: 120px;
+  }
+
+  .img-footer-social {
+    width: auto;
+    height: 120px;
+  }
+
+  .mt-mobile-ls{
+    margin-top: 2rem;
+  }
+
+  .p-social {
+    position: relative;
+    bottom: 90px;
+    justify-content: center;
+  }
+
+  .vertical-mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p-social img {
+    height: 55px;
+    margin: 1rem 0;
+  }
+
+  .familia-potes-social {
+    height: 120px;
+  }
+
+  .mt5{
+    margin: auto;
+    padding-top: 1rem;
+  }
+
+  li {
+    margin: 0;
+    font-size: 14px;
+  }
+  /**
+    * Style of Socials End
+  */
+}
+@media (min-width: 350px) and (max-width: 767px) and (orientation: landscape) {
+  article:nth-child(1) {
+    height: 600px !important;
+  }
+
+  #Juga header .bg-ttl-juego {
+    position: absolute;
+    width: 37%;
+    left: -70px!important;
+    bottom: 5.5rem!important;
+    text-align: center;
+  }
+  .img-logo-juego {
+    margin-left: 45vw!important;
+  }  
+  .slider {
+    width: 60vw !important;
+  }
+
+  article:nth-child(5) {
+    height: 100vh !important;
+  }
+
+  .tabla table {
+    width: 50vw !important;
+  }
+
+  .mt5{
+    margin: auto;
+    padding-top: 3rem;
+  }
+  #Juga hgroup h3{
+    font-size: 3.5vw!important;
+  }
+
+  .vertical-mobile {
+    flex-direction: unset;
+    align-items: center;
+  }
+
+  .p-social img{
+    height: 28px;
+  }
+
+  .familia-potes-social{
+    height: 160px;
+    position: relative;
+    top: 2rem;
+  }
+  
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (max-width: 349px) {
+  article:nth-child(1) {
+    height: 100vh;
+  }
+
+  .btn-menu {
+    position: fixed;
+    top: -25px;
+    right: -20px;
+    z-index: 10;
+  }
+
+  article:nth-child(4) {
+    height: auto;
+  }
+
+  .menu {
+    line-height: 2em;
+  }
+
+  .menu .logo {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .menu h6 {
+    font-size: 10px;
+  }
+
+  /**
+    * Style of Game Start 
+  */
+  .d-none-mobileee {
+    display: none;
+  }
+
+  #Juga .img-minion-uno {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    height: 180px;
+  }
+
+  #Juga .bg-ttl-juego .f-bold {
+    font-family: 'GT-Eesti-Pro-Display-Bold';
+    font-size: 9px;
+    line-height: 10px;
+  }
+
+  #Juga .bg-ttl-juego .f-light {
+    font-size: 7px;
+    line-height: 10px;
+  }
+
+  #Juga header .bg-ttl-juego {
+    position: absolute;
+    width: 35%;
+    left: 0;
+    bottom: .5rem;
+  }
+
+  #Juga .bg-ttl-juego {
+    background-color: white;
+    padding: 15px 25px 10px 25px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    text-align: center;
+  }
+
+  .banner-juego {
+    width: 90.5vw;
+  }
+
+  .img-minion-juego {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: 1;
+    height: 200px;
+  }
+
+  .img-logo-juego {
+    height: 100px;
+    width: auto;
+    margin-left: 7rem;
+    position: relative;
+    top: 2rem;
+  }
+
+  .footer-juego h4 {
+    color: #FDC300;
+    font-size: 15px;
+  }
+
+  .footer-juego h5 {
+    color: #000;
+    font-size: 12px;
+  }
+
+  .iframe {
+    margin-top: 5rem;
+  }
+
+  .iframe .juego {
+    width: 96%;
+    height: 150px;
+  }
+
+  .juego .img-pote-juego {
+    height: 90px;
+    position: absolute;
+    top: 16rem;
+    right: 15rem;
+  }
+
+  .ttl-juego {
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 20px;
+  }
+
+  .potes-xs {
+    padding: 1.5rem;
+  }
+
+  #Juga hgroup h3 {
+    font-size: 6.5vw;
+    margin-right: .8rem;
+  }
+
+  #Juga hgroup {
+    padding-bottom: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-juego {
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+  .footer-juego h5 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /**
+    * Style of Game End
+  */
+
+  /**
+    * Style of Product Start
+  */
+  article:nth-child(2) {
+    background-size: 700px;
+    background-position: 110% 50%;
+  }
+
+  #Productos header h1 {
+    font-size: 25px;
+  }
+
+  #Productos header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Productos footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  #Productos footer button {
+    background-color: #f94f01;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    margin: 0 auto;
+  }
+
+  #Productos footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #Productos .contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slider {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .swiper-slide {
+    width: 90vw;
+    margin: 5rem 0;
+  }
+
+  .swiper-slide img {
+    height: 240px;
+    width: auto;
+  }
+
+  #Productos .contenedor-productos .productos-minion-1 {
+    display: none;
+  }
+
+  #Productos .contenedor-productos .productos-minion-2 {
+    display: none;
+  }
+
+  #Productos .img-potes-prod {
+    height: 340px;
+  }
+
+  .p-ttl {
+    position: relative;
+    text-align: center;
+  }
+
+  /**
+    * Style of Product End
+  */
+
+  /**
+    * Style of Nutritional Information Start 
+  */
+  #Informacion-nutricional header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 98%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Informacion-nutricional header h1 {
+    font-size: 20px;
+  }
+
+  #Informacion-nutricional .f-10 {
+    font-size: 10px;
+  }
+
+  #Informacion-nutricional footer {
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .tabla {
+    background-image: url('../img/asset_Soporte_Info_nutri.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px 450px;
+    height: 360px;
+    padding: 1rem !important;
+    border-radius: 40px;
+  }
+
+  .tabla table {
+    width: 80vw;
+    margin: auto;
+  }
+
+  #infonutri p {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 10px;
+  }
+
+  .tabla tr th {
+    font-family: 'GT-Eesti-Pro-Display-Regular';
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 1rem;
+  }
+
+  .tabla tr th:nth-child(1) {
+    font-family: 'GT-Eesti-Pro-Display-Bold';
+    font-size: 14px;
+    padding-right: 10%;
+    text-align: center;
+  }
+
+  .tabla tr td {
+    font-family: 'GT-Eesti-Pro-Display-Regular';
+    font-size: 12px;
+  }
+
+  table tbody tr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tabla table th h1 {
+    font-size: 15px;
+  }
+
+  .tabla table th h2 {
+    font-size: 10px;
+  }
+
+  /**
+    * Style of Nutritional Information End
+  */
+
+  /**
+    * Style of Buy Start
+  */
+  #Comprar {
+    padding: 2rem 0;
+  }
+
+  #Comprar header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE100;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Comprar header h1 {
+    font-size: 25px;
+  }
+
+  #Comprar .contenedor-productos {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  #Comprar .contenedor-productos .mt-mobile {
+    margin-top: 1rem;
+  }
+
+  #Comprar .contenedor-productos .pt-mobile {
+    padding-top: 2rem !important;
+  }
+
+  #Comprar .p-mobile-icon {
+    padding: 0 !important;
+  }
+
+  #Comprar .contenedor-productos .hide-mobile {
+    display: none;
+  }
+
+  #Comprar .icon-market {
+    height: 60px;
+    width: auto;
+
+  }
+
+  #Comprar .h-60-mobile {
+    height: 50px;
+  }
+
+  #Comprar .contenedor-productos .productos-minion-1 {
+    display: none;
+  }
+
+  #Comprar .contenedor-productos .productos-minion-2 {
+    display: none;
+  }
+
+  #Comprar .icon-sere {
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  #Comprar .text-left {
+    text-align: center !important;
+  }
+
+  .icon-market-l-wl {
+    height: 60px;
+    width: auto;
+    margin-top: 1rem;
+  }
+
+  .icon-market-l-w {
+    height: 50px;
+    width: auto;
+    margin-top: 1rem;
+  }
+
+  li{
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .mt5{
+    margin: auto;
+    padding-top: 1rem;
+  }
+
+  /**
+    * Style of Buy End
+  */
+
+  /**
+    * Style of Socials Start
+  */
+  article:nth-child(5) {
+    height: 95vh;
+  }
+
+  #Sociales header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+  }
+
+  #Sociales header h1 {
+    font-size: 20px;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #Sociales footer {
+    background-image: url('../img/asset_gradient_Seccion.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #Sociales .img-familia-potes {
+    height: 120px;
+  }
+
+  .vertical-mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-footer-social {
+    width: auto;
+    height: 120px;
+  }
+
+  .p-social {
+    position: relative;
+    bottom: 90px;
+    justify-content: center;
+  }
+
+  .p-social img {
+    height: 40px;
+    margin: .5rem 0;
+  }
+
+  .familia-potes-social {
+    height: 100px;
+  }
+
+  .icon-market-l{
+    height: 50px;;
+  }
+
+  /**
+    * Style of Socials End
+  */
+
+}
+
+#Comprar {
+  background-image: url('../img/asset_gradient_Seccion.svg');
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+}
+
+/**
+  * Style of Menu Start
+*/
+nav,
+.navbar-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #ffe100;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  color: #000;
+}
+
+.nav-hide {
+  display: none;
+}
+
+nav ul {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 0 !important;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 25pt;
+  color: inherit;
+  font-weight: bolder;
+  text-decoration: none !important;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  transition: .2s ease-in-out;
+}
+
+.navbar-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 80%;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-on .bar1,
+.navbar-on .bar2,
+.navbar-on .bar3 {
+  background-color: white;
+}
+
+.navbar-on .bar1 {
+  transform-origin: 10% 40%;
+  transform: rotate(45deg);
+}
+
+.navbar-on .bar3 {
+  transform-origin: 10% 40%;
+  transform: rotate(-45deg);
+}
+
+.navbar-on .bar2 {
+  background-color: transparent;
+}

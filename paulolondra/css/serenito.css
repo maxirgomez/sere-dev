@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'AkzidenzGroteskBQ';
+    src: url('../fonts/AkzidenzGroteskBQ-BoldExt.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-BoldExt.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'AkzidenzGroteskBQ';
+    src: url('../fonts/AkzidenzGroteskBQ-LigExt.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-LigExt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* BASIC CSS */
+
+html{box-sizing:border-box;-webkit-font-smoothing:antialiased;position:relative;font-family:'AkzidenzGroteskBQ',sans-serif!important;font-size:16px;color:#fff;background:#FF6700;min-height:100%}
+*,*:before,*:after{box-sizing:inherit;position:relative}
+body {
+    margin: 0 !important;
+    overflow-x: hidden;
+    background: #FF6700 url('../img/fondo1920.png?v=3') no-repeat 50% 0;
+    text-align: center;
+    font-size: 1.4em;
+    scroll-behavior: smooth;
+}
+
+a{color:inherit;text-decoration:none;transition:all .65s}
+a:hover{color:inherit}
+img{max-width:100%;height:auto}
+
+
+
+.align-center {text-align: center;}
+
+/* PLACEHOLDER HACK */
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder{font-family:'AkzidenzGroteskBQ';font-size:16px;color:#b09673!important;text-align:center}
+
+
+.site {margin: 0 auto; width: 100%; max-width: 1080px;}
+.inner {padding: 10px}
+.top {/* margin: 100px 0 140px; */height: 100vh;display: flex;align-items: flex-end; max-height: 700px;max-width: 840px; margin: 0 auto 15vh;}
+.top img {display: block;margin: 0 auto;}
+
+.btn-menu {position: absolute; top: 15px; right: 15px;}
+
+
+.video {position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video iframe {position:absolute;top:0;left:0;width:100%;height:100%}
+
+.sumate {max-width: 600px; margin: 0 auto;}
+
+.swiper-container{--swiper-navigation-size:80px;height: 480px;}
+.swiper-slide h3 {margin: 0; position: absolute;bottom: 0;width: 80%;left: 10%;}
+.swiper-slide img {max-height: 420px; display: block; margin: 0 auto;}
+.swiper-button-prev {left: 0px;}
+.swiper-button-next {right: 0px;}
+.swiper-button-next, .swiper-button-prev { color: rgba(0,0,0,0.5); transform: scale(0.55, 1.4); outline: none;}
+
+.nutri {text-align: left;}
+.nutri .tabla {background: url('../img/fondo-tabla.png') no-repeat 50% 100%;background-size: 100% 100%;color: #000;padding: 15px;font-size: 0.8em;padding-bottom: 90px;}
+.nutri .tabla table {margin: 0 auto; border-collapse: collapse;}
+.nutri .tabla td + td {text-align: right; font-weight: bold;}
+.nutri .tabla hr {background: #000; border-top: none; border-bottom: 1px solid #000;}
+
+.btn-nutri {line-height: 1.1;display: inline-block;font-size: 18px;padding: 15px 15px 15px 65px;background: url(../img/vertabla.png) no-repeat 15px 50%;}
+
+.top-social {max-width: 480px; margin: 0 auto;}
+
+
+.social {padding: 30px; display: flex; justify-content: space-around; max-width: 300px; margin: 0 auto;}
+.social img {height: 32px; }
+
+.legal {font-size: 12px;line-height: 1;padding: 10px;}
+
+.menu {background: #FF6700; padding: 30px; position: fixed; z-index: 1000; top: 0; left: 0; right: 0; bottom: 0; line-height: 4em; transform: translateX(-100%); transition: transform 1s ease-in-out;}
+.menu.open {transform: translateX(0);}
+.menu .logo {height: 64px;}
+.menu .btn {font-size: 2em;}
+
+#feed {display: flex; justify-content: space-between; align-items: center;}
+#feed img {width: 33%;}
+
+@media (max-width: 1080px){
+  body {background: #FF6700 url('../img/fondo1080.png?v=3') no-repeat 50% 0; background-size: 100% auto; font-size: 0.9em;}
+  .top {margin: 15vw 0;height: auto;}
+  
+}
+@media (max-width: 480px){
+    .bienvenido br {display: none;}
+    .nutri .tabla {background-size: 100% 100%;font-size: 1em;}
+    .seguinos, .legal {background: #FF6700;}
+}
+
+@media (min-width: 1080px){
+    .chorrea > img {opacity: 0;display: none;}
+}
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

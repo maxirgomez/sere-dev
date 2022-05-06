@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+html, body{font-family: 'Source Sans Pro';}
+body.index{background:url('../img/bg-home.png') 50% 0 no-repeat #fad5a9;padding-top: 20px}
+.btn, .navbar-default, .navbar-default .navbar-header .navbar-brand, h1, h2, h3, h4, h5, h6{ font-family: 'Source Sans Pro';color:#939598;}
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.btnMenu{float: right;}
+.btnMenu img{}
+.btnMenu:hover img{-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+.logo{}
+
+
+@media (max-width: 768px) {
+
+
+}
+
+
+
+.scrollMas{position: fixed;bottom: 5%;color:#f7792f;z-index: 1;left: 48%;font-size: 20px;font-weight: bold;display: none;}
+@media (max-width: 1200px) {
+  .scrollMas{display: inline-block;}
+}
+@media (max-width: 768px) {
+  .scrollMas{display: none;}
+}
+
+.logoLeft{float: left;margin-top: 20px}
+.masc{width: 100%;display: inline-block;vertical-align: top;height:60px;overflow:hidden;padding-bottom: 30px}
+#appMenu{display: none;}
+.menuContainer{background-color:#7346c9;position: fixed;left: 0;top:0;width: 100%;height: 100%;margin:0 auto;z-index: 9000}
+.menuContainer .mcon{margin:0 auto 0;width: 100%;max-width: 1200px;text-align: center;margin-top: 15%;position: relative;}
+.menuContainer .ccon{margin:0 auto 0;width: 100%;max-width: 1200px;}
+.menuContainer .mcon .btnera{font-size: 32px;margin:10px 0;line-height: 36px;display: inline-block;width: 100%;color:#fde533;position: relative;}
+.menuContainer .mcon .btnera.sub{font-size: 24px;line-height: 26px;margin:3px 0;}
+.menuContainer .mcon .redes{color:#fde533;margin:20px 10px;display: inline-block;}
+.menuContainer .mcon a{transition: all .3s ease-in-out;}
+
+.menuContainer .mcon a:hover{text-decoration: none;color:#fff5ab;}
+.menuContainer .mcon a:active,.menuContainer .mcon a:focus{text-decoration: none}
+.menuContainer .cerrar{float: right;font-size: 26px;color:#FFFFFF;margin:17px 10px 0;}
+.menuContainer .cerrar:hover{color:#FFFFFF;text-decoration: none;}
+.menuContainer .cerrar:active{color:#FFFFFF;text-decoration: none;}
+.menuContainer .cerrar:focus{color:#FFFFFF;text-decoration: none;}
+.menuContainer .logosCartoon{width: 100%;max-width: 1200px;margin:100px auto  0;}
+.menuContainer .logosCartoon img{float: right;margin-right: 20px}
+.menuContainer .logosCartoon p{text-align: right;font-size:12px;float: right;color:#fde533;margin-right: 20px}
+
+
+@media (max-width: 768px) {
+
+.masc{width: 100%;display: inline-block;vertical-align: top;height:150px!important;overflow:hidden;}
+}
+
+.legalFooter{position: fixed;bottom: 0;text-align: center;width: 100%;z-index: 9999}
+.legalFooter p{color:#f7792f;font-size: 14px;transition: all .3s ease-in-out;}
+.legalFooter a{color:#f7792f;font-size: 14px;}
+.legalFooter a:hover, .legalFooter a:visited, .legalFooter a:actived{color:#f7792f;font-size: 14px;}
+
+.serebanda{background-color: #fad5a9;padding-top: 20px}
+.titulos{position: absolute;top: 0;left: 45%;top:25px;z-index: 8000;color:#f7792f;font-size: 26px;font-weight: 300;text-align: center;line-height: 30px}
+.titulos a{color:#f7792f;text-decoration: none;margin: 0 5px;display: inline-block;font-weight: 300;margin-left: -20px}
+.titulos a:hover, .titulos a:visited, .titulos a:actived{text-decoration: none;}
+
+@media (max-width: 768px) {
+
+  .titulos{left: 40%;top:90px;}
+  .legalFooter{position: inherit;display: inline-block;width: 100%}
+
+}
+
+@media (max-width: 480px) {
+  .menuContainer .logosCartoon{margin:30px auto  0;}
+  .titulos{left: 30%;}
+
+
+}
+
+
+
+/*
+*/
+
+.caraMaqui{width: 100%;display: inline-block;margin: 0px 0 20px;}
+.caraMaqui h1{margin: -160px 0 20px;font-weight: bold;text-align: center;text-transform: uppercase;color:#f7792f;font-style: italic;}
+.caraMaqui .rasgos{width: 550px;margin:0 auto;min-height: 605px;background:url('../img/serenito-cara-bg.png') 50% bottom no-repeat;position: relative;margin-bottom: 200px}
+.caraMaqui .rasgos.comio{background:url('../img/serenito-cara-bg-comio.png') 50% bottom no-repeat}
+.caraMaqui .rasgos.comio .boca{display:none!important;}
+.caraMaqui .rasgos div.real{cursor: pointer;}
+.caraMaqui .rasgos .cejaIzq{width:94px;height: 28px;background:url('../img/serenito-maqui-ceja-izquierda-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:40px;left: 90px}
+.caraMaqui .rasgos .cejaDer{width:91px;height: 30px;background:url('../img/serenito-maqui-ceja-derecha-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:35px;left:370px;}
+.caraMaqui .rasgos .ojoIzq{width:222px;height: 279px;background:url('../img/serenito-maqui-ojo-izquierdo-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:110px;left: 50px;}
+.caraMaqui .rasgos .ojoDer{width:217px;height: 278px;background:url('../img/serenito-maqui-ojo-derecho-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:110px;left: 300px;}
+.caraMaqui .rasgos .boca{width:217px;height: 129px;background:url('../img/serenito-maqui-boca-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:440px;left: 110px}
+.caraMaqui .rasgos .potecito{width:146px;height: 214px;background:url('../img/serenito-maqui-pote-home-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:440px;left: 610px}
+
+.caraMaqui .rasgos .cejaIzq.real{background:url('../img/serenito-maqui-ceja-izquierda.png') 0 0 no-repeat;z-index: 100}
+.caraMaqui .rasgos .cejaDer.real{background:url('../img/serenito-maqui-ceja-derecha.png') 0 0 no-repeat;z-index: 100}
+.caraMaqui .rasgos .ojoIzq.real{background:url('../img/serenito-maqui-ojo-izquierdo.png') -5px 0 no-repeat;z-index: 80}
+.caraMaqui .rasgos .ojoDer.real{background:url('../img/serenito-maqui-ojo-derecho.png') 5px 0 no-repeat;z-index: 80}
+.caraMaqui .rasgos .boca.real{background:url('../img/serenito-maqui-boca.png') 0 0 no-repeat;z-index: 90}
+.caraMaqui .rasgos .potecito.real{background:url('../img/serenito-maqui-pote-home.png') 0 0 no-repeat;display: none;}
+.caraMaqui .rasgos .pupilaIzq{width:116px;height: 198px;background:url('../img/serenito-maqui-ojo-izquierdo-p.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 150;top:158px;left: 114px;}
+.caraMaqui .rasgos .pupilaDer{width:116px;height: 199px;background:url('../img/serenito-maqui-ojo-derecho-p.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 150;top:149px;left: 355px;}
+
+/*
+26.75
+*/
+.caraMaqui .rasgos .potecito.real.paso1{background:url('../img/serenito-maqui-pote-home-paso1.png') 0 0 no-repeat;}
+.caraMaqui .rasgos .potecito.real.paso2{background:url('../img/serenito-maqui-pote-home-paso2.png') 0 0 no-repeat;}
+.caraMaqui .rasgos .potecito.real.paso3{background:url('../img/serenito-maqui-pote-home-paso3.png') 0 0 no-repeat;}
+.caraMaqui .rasgos .potecito.real.paso4{background:url('../img/serenito-maqui-pote-home-paso4.png') 0 0 no-repeat;}
+.caraMaqui .rasgos .potecito.real.paso5{background:url('../img/serenito-maqui-pote-home-paso5.png') 0 0 no-repeat;}
+.caraMaqui .rasgos .potecito.real.paso6{background:url('../img/serenito-maqui-pote-home-paso6.png') 0 0 no-repeat;}
+.caraMaqui .rasgos .potecito.real.paso7{background:url('../img/serenito-maqui-pote-home-paso7.png') 0 0 no-repeat;}
+.caraMaqui .rasgos .potecito.real.paso8{background:url('../img/serenito-maqui-pote-home-paso8.png') 0 0 no-repeat;}
+
+
+/*
+*/
+
+
+.cartel{margin:25% auto 0;width: 280px;background:#f7792f;border-radius: 20px;padding:20px;}
+.cartel p{color:#FFFFFF;font-weight: bold;font-size: 20px;text-align: center;line-height: 20px}
+.cartel p span{font-weight: normal;font-size: 16px;}
+
+
+.cartel2{margin:0% auto 0;background:#f7792f;border-radius: 20px;padding:13px;margin-top: -100px;transition: all .3s ease-in-out;}
+.cartel2 p{color:#FFFFFF;font-weight: bold;font-size: 18px;text-align: center;line-height: 20px}
+.cartel2 p span{font-weight: normal;font-size: 16px;}
+.cartel2:hover{background-color: #db532a}
+
+
+
+.cartel3{margin:0 auto 0;background:#f7792f;border-radius: 20px;padding:13px;transition: all .3s ease-in-out;position: fixed;bottom: 8%;left: 20%;z-index:5000;display: none;}
+.cartel3 p{color:#FFFFFF;font-weight: bold;font-size: 18px;text-align: center;line-height: 20px}
+.cartel3 p span{font-weight: normal;font-size: 16px;}
+.cartel3:hover{background-color: #db532a}
+
+
+
+
+.carasContainer{width: 100%;display: inline-block;margin: 10% 0;}
+.carasContainer .bigCaras{}
+.carasContainer .bigCaras{width: 20%;display: inline-block;margin:0 1.5%;text-align: center;}
+.carasContainer .bigCaras img{width: 100%}
+.carasContainer .bigCaras p{font-family: 'PT Sans';font-weight: bold;font-size: 48px;color:#f7792f;font-style: italic;text-transform: uppercase;margin-top: 30px}
+.carasContainer .bigCaras:hover, .carasContainer .bigCaras:visited, .carasContainer .bigCaras:active{text-decoration: none;}
+.carasContainer .bigCaras:hover,.carasContainer .bigCaras:focus, .carasContainer .bigCaras:visited, .carasContainer .bigCaras:active{text-decoration: none;}
+
+
+.caraMaqui .rasgos .cejaIzq2{width:47px;height: 14px;background:url('../img/serenito-maqui-ceja-izquierda-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:10%;left: 19%}
+.caraMaqui .rasgos .cejaDer2{width:46px;height: 15px;background:url('../img/serenito-maqui-ceja-derecha-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:10%;left:70%;}
+.caraMaqui .rasgos .ojoIzq2{width:111px;height: 140px;background:url('../img/serenito-maqui-ojo-izquierdo-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:17%;left: 10%;}
+.caraMaqui .rasgos .ojoDer2{width:107px;height: 139px;background:url('../img/serenito-maqui-ojo-derecho-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:17%;left: 60%;}
+.caraMaqui .rasgos .boca2{width:109px;height: 65px;background:url('../img/serenito-maqui-boca-bg.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 10;top:47%;left: 21%}
+
+
+.caraMaqui .rasgos .cejaIzq2.real{background:url('../img/serenito-maqui-ceja-izquierda.png') 0 0 no-repeat;z-index: 100;background-size: cover;}
+.caraMaqui .rasgos .cejaDer2.real{background:url('../img/serenito-maqui-ceja-derecha.png') 0 0 no-repeat;z-index: 100;background-size: cover;}
+.caraMaqui .rasgos .ojoIzq2.real{background:url('../img/serenito-maqui-ojo-izquierdo.png') -5px 0 no-repeat;z-index: 80;background-size: cover;}
+.caraMaqui .rasgos .ojoDer2.real{background:url('../img/serenito-maqui-ojo-derecho.png') 5px 0 no-repeat;z-index: 80;background-size: cover;}
+.caraMaqui .rasgos .boca2.real{background:url('../img/serenito-maqui-boca.png') 0 0 no-repeat;z-index: 90;background-size: cover;}
+.caraMaqui .rasgos .pupilaIzq2{width:58px;height: 99px;background:url('../img/serenito-maqui-ojo-izquierdo-p.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 150;top:22%;left: 18%;background-size: cover;}
+.caraMaqui .rasgos .pupilaDer2{width:58px;height: 99px;background:url('../img/serenito-maqui-ojo-derecho-p.png') 0 0 no-repeat;background-size: cover;position: absolute;z-index: 150;top:21%;left: 70%;background-size: cover;}
+
+@media (max-width: 1200px) {
+  .caraMaqui .rasgos{margin-bottom: 300px}
+  .caraMaqui .rasgos h1{margin-top: -280px}
+}
+@media (max-width: 768px) {
+
+  .carasContainer{margin: 20% 0;}
+  .carasContainer .bigCaras{width: 42%;margin:0 3%;}
+  .carasContainer .bigCaras p{font-size: 30px}
+
+  .caraMaqui .rasgos{background-size: cover;width: 100%;background:url('../img/serenito-cara-bg-mobile.png') 50% 50% no-repeat;cursor: pointer;max-width: 340px;margin-bottom: 50px}
+  .caraMaqui .rasgos h1{margin-top: 0px}
+  .caraMaqui .rasgos div.real{cursor: pointer;}
+  
+
+  .cartel{margin:20% 0 0 2%;}
+
+  .caraMaqui .rasgos.comio{background:url('../img/serenito-cara-bg-comio-mobile.png') 50% 50% no-repeat;background-size: inherit;}
+  .caraMaqui .rasgos.comio .boca{display:none!important;}
+  .caraMaqui .rasgos.comio .boca2{display:none!important;}
+
+}
+
+.mano{display: none;position: absolute;z-index: 4000;}
+.mano img{position: relative;left: -1650px;top:-90px;}
+
+.productosHtml{background-color: #fde533;padding-top: 20px}
+.productosHtml.productosWau{background-color: #27bcff;padding-top: 20px}
+
+.selectorSerenito{width: 100%;display: inline-block;margin: 10% 0;text-align: center;}
+.selectorSerenito a{display: inline-block;margin:20px;font-size: 72px;color:#f7792f;font-weight: bold;}
+.selectorSerenito a:hover, .selectorSerenito a:active, .selectorSerenito a:visited{text-decoration: none;}
+.selectorSerenito a:after {content: '';width: 0px;height: 4px;display: block;background: #f7792f;transition: 300ms;}
+.selectorSerenito a:hover:after {width: 100%;}
+
+@media (max-width: 768px) {
+
+  
+
+}
+@media (max-width: 480px) {
+
+  .selectorSerenito a{margin: 20px 10px 0px;}
+
+}
+.carousel-indicators{bottom: 0px!important}
+.carousel{max-width: 1120px;margin:0 auto;width: 100%;display: inline-block;margin-top: 10%;margin-bottom: 100px}
+.carousel .item img{width: 100%}
+.carousel .item h3{color:#7346c9;margin:60px 0 20px 0;font-size: 70px;font-weight: bold; font-style: italic;text-align: center;text-transform: uppercase;margin-bottom: 100px}
+.carousel-indicators li{background-color: #f7792f;width: 13px;height: 13px;border-radius: 13px;border:none;margin:0 7px;}
+.carousel-indicators .active{background-color: #7346c9;width: 13px;height: 13px;border-radius: 13px;border:none;margin:0 7px;}
+
+.carousel-control.left{background:none;opacity: 1;width: 5%} 
+.carousel-control.right{background:none;opacity: 1;width: 5%} 
+.carousel-control i{position: absolute;top:30%;color:#f7792f;text-shadow: none;font-size: 26px} 
+
+@media (max-width: 768px) {
+  .carousel{margin-top: 120px}
+  .carousel .item h3{font-size: 36px}
+  .carousel-control i{font-size: 18px} 
+  .carousel-control.right i{left: -5px} 
+
+}
+
+.productosWau .titulos{color:#fde533;}
+.productosWau .carousel-indicators li{background-color: #fde533;}
+.productosWau .carousel-indicators .active{background-color: #7346c9;}
+.productosWau .carousel-control i{color:#fde533;} 
+.productosWau .legalFooter p{color:#fde533;}
+
+
